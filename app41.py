@@ -8,7 +8,7 @@ app = Flask(__name__)
 Message = namedtuple("Message", "text tag")
 messages = []
 
-# run flask --app .\app41.py run
+#flask --app .\app41.py run
 @app.route("/", methods=['GET'])
 def index():
     return render_template('index.html')
